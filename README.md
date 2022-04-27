@@ -115,3 +115,8 @@ This function is used to delete a node from Merkle tree. If the key given is pre
 - Step 11: tree->value is equal to left->value.
 - Step 12: tree->left is equal to remove(tree->left, tree->key).
 - Step 13: Return tree.
+
+# Code Output
+
+![image](https://user-images.githubusercontent.com/55658051/165578397-d79e3953-7d0e-4651-8e28-8ff7b6b7a3ab.png)
+
