@@ -92,7 +92,7 @@ This function is used to add a node into the merkle tree. This function is used 
 ## Delete a node from merkle tree
 This function is used to delete a node from Merkle tree. If the key given is present in the merkle tree then it will delete the node from the tree. Git remembers all the files you have staged and stores them in a tree structure inside the commit. The nodes of this tree represent your files and directories. This function is used to delete these nodes.
 
-###Algorithm to delete a node in Merkle tree.
+### Algorithm to delete a node in Merkle tree.
 - Step 1: We will take a key as a parameter.
 - Step 2: Take the hash(key) and store it in a variable called index.
 - Step 3: store (struct node*) arr[index].head in a pointer called tree of datatype node.
@@ -101,7 +101,7 @@ This function is used to delete a node from Merkle tree. If the key given is pre
 - Step 6: If the find function returns null then the key is not present in the tree.
 - Step 7: If it is not null then we will use the remove function to delete the element.
 
-###Algorithm of remove function.
+### Algorithm of remove function.
 - Step 1: It will take tree and key as parameters.
 - Step 2: If the tree is null then return null.
 - Step 3: If the key is smaller than the tree->key then tree->left is equal to remove(tree->left, key) and return tree.
