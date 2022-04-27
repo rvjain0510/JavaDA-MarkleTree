@@ -50,3 +50,20 @@ Merkle Root is stored in the block header. The block header is the part of the b
 
 ![image](https://user-images.githubusercontent.com/55658051/165556597-4691891e-cdc0-4b3e-ac42-aa327eb62f1e.png)
 
+# Structure of the node of binary Merkle tree
+It contains four variables:
+
+- It contains a key variable.
+- It contains value variable
+- It contains two links.
+
+## Find operation in Merkle tree
+This function is used to check whether the given key is present in the merkle tree or not. If it is present then it will return that node else it will return null. This function is used to retrieve data from Git. When we commit a change to a repository in git. Git computes SHA-1 ( SHA-1 produces a 160-bit hash value from an arbitrary length string) over the contents of that directory tree and stores them with metadata. It is stored in .git/objects and gives you back the unique key that now refers to that data object.
+
+### Algorithm of find function in Merkle tree
+
+- Step 1: We will take tree and key as parameters.
+- Step 2: If the tree is null then we will return null.
+- Step 3: If the tree->key is equal to the key we will return the tree.
+- Step 4: If the key is smaller than tree->key then we will return find(tree->left, key)
+- Step 5: else return find(tree->right, key)
